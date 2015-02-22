@@ -1,0 +1,68 @@
+@import "normalize.less";
+@import "mixins";
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#calendar-wrapper{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.week{
+    height: 100%;
+    width: 100%;
+
+    .head{
+        border-bottom: 1px solid black;
+        font-size: 11px;
+
+        .day{
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+.day{
+    border-right: 1px solid black;
+    box-sizing: border-box;
+
+    &:last-child{
+        border: 0;
+    }
+}
+
+.content .day{
+    position: relative;
+    height: 100%;
+}
+
+.week-7{
+    .day{
+        width: 1%*(100/7);
+    }
+}
+
+.week-5{
+    .day{
+        width: 1%*(100/5);
+    }
+}
+
+.appointment{
+    position: absolute;
+    background-color: #dddddd;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    p{
+        margin: 7px 5px;
+        font-size: 11px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

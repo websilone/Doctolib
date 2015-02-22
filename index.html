@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Test JS Doctolib</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div id="calendar-wrapper" style="height: 600px;">
+        <!--<table class="week week-7">
+            <thead>
+                <tr>
+                    <td class="day">Lundi 6 Octobre 2014</td>
+                    <td class="day">Mardi 7 Octobre 2014</td>
+                    <td class="day">Mercredi 8 Octobre 2014</td>
+                    <td class="day">Jeudi 9 Octobre 2014</td>
+                    <td class="day">Vendredi 10 Octobre 2014</td>
+                    <td class="day">Samedi 11 Octobre 2014</td>
+                    <td class="day">Dimanche 12 Octobre 2014</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="day"></td>
+                    <td class="day">
+                        <div class="appointment">
+                            <p>11:00 - John Doe</p>
+                        </div>
+                    </td>
+                    <td class="day"></td>
+                    <td class="day"></td>
+                    <td class="day"></td>
+                    <td class="day"></td>
+                    <td class="day"></td>
+                </tr>
+            </tbody>
+        </table>-->
+    </div>
+
+    <script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        new Calendar('#calendar-wrapper', new Date(2014, 9, 6),
+                [
+                    {
+                          start_date: new Date(2014, 9, 7, 9, 30)
+                        , end_date: new Date(2014, 9, 7, 8, 30)
+                        , title: 'John Doe'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 7, 9, 30)
+                        , end_date: new Date(2014, 9, 7, 11, 30)
+                        , title: 'Jane Doe'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 7, 12, 00)
+                        , end_date: new Date(2014, 9, 7, 13, 30)
+                        , title: 'Jane Doe'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 8, 9, 30)
+                        , end_date: new Date(2014, 9, 8, 14, 0)
+                        , title: 'Al Di Meola'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 8, 2, 30)
+                        , end_date: new Date(2014, 9, 8, 9, 0)
+                        , title: 'Al Di Meola 2'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 8, 1, 00)
+                        , end_date: new Date(2014, 9, 8, 20, 0)
+                        , title: 'Al Di Meola 2'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 10, 12, 0)
+                        , end_date: new Date(2014, 9, 10, 15, 30)
+                        , title: 'John McLaughlin'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 10, 9, 15)
+                        , end_date: new Date(2014, 9, 10, 12, 30)
+                        , title: 'Paco De Lucia'
+                    }
+                    , {
+                          start_date: new Date(2014, 9, 10, 15, 0)
+                        , end_date: new Date(2014, 9, 10, 18, 30)
+                        , title: 'Django Reinhardt'
+                    }
+                ]
+        );
+    </script>
+</body>
+</html>
